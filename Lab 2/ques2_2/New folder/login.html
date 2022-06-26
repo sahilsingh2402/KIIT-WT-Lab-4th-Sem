@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Consolas, Helvetica, sans-serif;
+            color: #0e0b16;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            padding: 16px;
+            background-color: #d0f0c0;
+        }
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 9px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: navajowhite;
+        }
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        input[type=email]:focus {
+            width: 100%;
+            padding: 9px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: navajowhite;
+        }
+        input[type=dropdown]:focus {
+            width: 100%;
+            padding: 9px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: navajowhite;
+        }
+        hr {
+            border: 1px solid navajowhite;
+            margin-bottom: 25px;
+        }
+        select {
+            width: 100%;
+            padding: 9px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: navajowhite;
+        }
+        textarea {
+            width: 100%;
+            padding: 9px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: navajowhite;
+        }
+        .registerbtn {
+            background-color: navajowhite;
+            color: #0e0b16;
+            ;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .registerbtn:hover {
+            opacity: 1;
+        }
+        .signin {
+            background-color: #0e0b16;
+            ;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <h1>Login with KIIT ID Only</h1>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <label for="school"><b></label>Select School</b></label>
+            <select name="dropdown" id="" size="" font="Consolas">
+                <option value="">Computer Applications</option>
+                <option value="" selected>Computer Engineering</option>
+                <option value="">Civil Engineering</option>
+                <option value="">Electronics Engineering</option>
+                <option value="">Mechanical Engineering</option>
+                <option value="">Electrical Engineering</option>
+                <option value="">Chemical Engineering</option>
+                <option value="">Biotechnology</option>
+                <option value="">Applied Sciences</option>
+                <option value="">Architecture & Planning</option>
+            </select>
+            <label for="semester"><b>Semester</b></label>
+            <select name="dropdown" id="" size="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="" selected>4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+            <button type="submit" class="registerbtn">Login</button>
+            <button type="submit" class="registerbtn">Forgot Password</button>
+        </div>
+    </form>
+</body>
+</html>

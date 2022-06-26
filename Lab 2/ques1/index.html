@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        body {
+            background-color: #db5c5c;
+        }
+
+        h1 {
+            font-family: Consolas;
+            text-align: center;
+
+        }
+
+        h2 {
+            font-family: Consolas;
+            text-align: center;
+            color: #553de7;
+        }
+
+        form {
+
+            font-family: Consolas;
+            text-align: left;
+
+            color: #2F24A2;
+            background-color: #5cdb95;
+            font-size: small;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 7px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User Registration Form</h1>
+    <form action="">
+        <br>
+        <h2>Enter user details below</h2>
+        First Name : <input type="text" name="first"> Last Name : <input type="text" name="last"><br>
+        Username : <input type="text" name="first"> Password : <input type="password" name="password"><br>
+        Select School : <select name="dropdown" id="" size="">
+            <option value="">Computer Applications</option>
+            <option value="" selected>Computer Engineering</option>
+            <option value="">Civil Engineering</option>
+            <option value="">Electronics Engineering</option>
+            <option value="">Mechanical Engineering</option>
+            <option value="">Electrical Engineering</option>
+            <option value="">Chemical Engineering</option>
+            <option value="">Biotechnology</option>
+            <option value="">Applied Sciences</option>
+            <option value="">Architecture & Planning</option>
+        </select> <br><br>
+        Courses :
+        <input type="checkbox"> M.Tech
+        <input type="checkbox"> B.Tech
+        <input type="checkbox"> Ph.D
+        <input type="checkbox"> B.Arch
+        <input type="checkbox"> Dual Degree <br><br>
+        Semester:
+        <select name="dropdown" id="" size="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="" selected>4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+        </select> Date of Joining : <input type="date" name="doj"><br><br>
+        Address : <br><textarea name="mytext" cols="60" rows="3"></textarea><br><br>
+        Gender :
+        Male <input type="radio" name="gender">
+        Female <input type="radio" name="gender">
+        Others <input type="radio" name="gender"><br><br>
+        E Mail : <input type="email"><br><br>
+        Attach Grade Card : <input type="file"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br><br>
+    </form>
+</body>
+
+</html>
